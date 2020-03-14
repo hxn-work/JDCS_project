@@ -1,0 +1,46 @@
+.se-count {
+    top: 212px;
+    left: 30px;
+    height: 40px;
+    overflow: hidden;
+    width: 220px;
+    display: inline-block;
+}
+
+.se-day {
+    display: none;
+}
+
+.se-hour,
+.se-min,
+.se-sec {
+    position: relative;
+    background-color: #362746;
+    width: 40px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 20px;
+}
+
+.se-txt {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.se-count i {
+    position: absolute;
+    font-size: 18px;
+}
+
+.se-count i:nth-of-type(1) {
+    left: 334px;
+    top: -24px;
+}
+
+.se-count i:nth-of-type(2) {
+    left: 394px;
+    top: -24px;
+}

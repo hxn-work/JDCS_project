@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <h1>
+        <a href="../../../index.html">
+            <img src="../../登入/logo-201305-b.png" alt="">
+        </a>
+
+
+    </h1>
+    <main>
+
+
+        <table>
+            <tr class="head">
+                <th class="title">精选热卖</th>
+                <!-- <th > </th> -->
+
+                <th>单价</th>
+                <th>数量</th>
+                <th>小计</th>
+                <th>删除</th>
+            </tr>
+
+
+        </table>
+        <div>
+            <a href="javaScript:;">立即结算</a>
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>
+<script>
+
+    var uid = localStorage.getItem("id")
+    var username = localStorage.getItem("username")
+    var token = localStorage.getItem("token")
+    $.get('http://jx.xuzhixiang.top/ap/api/cart-list.php', {
+        id: uid
+    }, function (data) {
+        console.log(data);
+        data = data.data;
+        var arr = data;
+        var str = '';
+        arr.forEach(function (val) {
+            str += "\n            <tr>\n                <td class=\"commodity\">\n                    <div>\n                        <img src=\"".concat(val.pimg, "\" alt=\"\">\n                    </div>\n                    <h3>").concat(val.pname, "</h3>\n                    <p>\u5C3A\u7801</p>\n                    <p><span>\u75AF\u62A2\u4EF7</span></p>\n                </td>\n                <td class=\"spice \">\n                    <h3>").concat(val.pprice, "</h3>\n                    <p>").concat(parseInt(val.pprice / (parseFloat(val.pdesc) / 10)), "</p>\n                </td>\n                <td>\n                    <div class=\"num\"  pid=").concat(val.pid, ">\n                        <a href=\"javaScript:;\" class=\"reduce\"> - </a><span class=\"num2\">").concat(val.pnum, "</span><a href=\"javaScript:;\" class=\"add\">+</a>\n                    </div>\n                </td>\n                <td class=\"sumsp \">\n                    <h3>").concat(val.pprice * val.pnum, "</h3>\n                </td>\n                <td >\n                    <a class=\"del\"  pid=").concat(val.pid, " href=\"javaScript:;\">\u5220\u9664</a>\n                </td>\n            </tr>");
+        });
+        $('table').append(str);
+    });
+
+
+    $('table').on('click', '.add', function () {
+        //只修改当前商品列的值
+        var $num = $(this).siblings('.num2');
+        var num = parseInt($num.html());
+        $.get('http://jx.xuzhixiang.top/ap/api/cart-update-num.php', {
+            uid: uid,
+            pid: $(this).parent().attr('pid'),
+            pnum: num + 1
+        }, function (data) {
+            console.log(data);
+        });
+        $num.html(num + 1);
+
+        let price = parseInt($(this).parent().parent().parent().find('.spice h3').html())
+
+        let sumsp = parseInt($(this).parent().parent().next().find('h3').html());
+        console.log(price, sumsp);
+
+        $(this).parent().parent().next().find('h3').html(sumsp + price)
+    });
+
+    $('table').on('click', '.reduce', function () {
+        var $num = $(this).siblings('.num2');
+        var num = parseInt($num.html());
+
+        if (num != 1) {
+            $num.html(num - 1);
+            $.get('http://jx.xuzhixiang.top/ap/api/cart-update-num.php', {
+                uid: uid,
+                pid: $num.parent().attr('pid'),
+                pnum: num - 1
+            }, function (data) {
+                console.log(data);
+            })
+            //计数加减
+            let price = parseInt($(this).parent().parent().parent().find('.spice h3').html())
+
+            let sumsp = parseInt($(this).parent().parent().next().find('h3').html());
+            console.log(price, sumsp);
+
+            $(this).parent().parent().next().find('h3').html(sumsp - price)
+
+        }
+    }); //删除按钮
+
+    $('table').on('click', '.del', function () {
+        //当用户点击删除时在页面删除
+        $(this).parent().parent().remove(); // console.log($(this).parent().parent());
+        $.get('http://jx.xuzhixiang.top/ap/api/cart-delete.php', {
+            uid: uid,
+            pid: $(this).attr('pid')
+        }, data => {
+            console.log(data);
+
+        })
+    });
+</script>

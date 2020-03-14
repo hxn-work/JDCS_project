@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JDCS</title>
+
+
+    <link rel="icon" href="//www.jd.com/favicon.ico" mce_href="//www.jd.com/favicon.ico" type="image/x-icon">
+
+
+
+    <link rel="stylesheet" href="./css/index.min.css">
+
+    <script src="./scr/地区/js/city-data.js"></script>
+    <script src="./scr/地区/js/hzw-city-picker.min.js"></script>
+    <link rel="stylesheet" href="./scr/地区/css/hzw-city-picker.css">
+    <link rel="stylesheet" href="./scr/search.css">
+    <link rel="stylesheet" href="./scr/侧边栏/css/nav.css">
+    <link rel="stylesheet" href="./scr/banner/banner.css">
+    <link rel="stylesheet" href="./scr/楼层栏/fixedmeau.css">
+    <link rel="stylesheet" href="./scr/导航/css/index.css">
+    <link rel="stylesheet" href="./scr/倒计时/css/zzsc.css">
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <!-- 按钮 -->
+    <!-- <link rel="stylesheet" href="./scr/列表/css/cart.css"> -->
+
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 头部 -->
+        <header>
+            <div class="head">
+                <div class="shouye"><img src="./images/house.png" alt="" style="width:21px;display: inline-block;transform: translate(-3px,-2px);"> 京东首页
+                </div>
+                <ul>
+                    <li><a href="./scr/登陆/index.html" target="_blank" id="username">你好，请登陆</a></li>
+                    <li id="loginUser"><a href="./scr/注册/index.html" style="color: red; font-size: 12px" target="_blank" id="register">免费注册</a></li>|
+                    <li><a href="">我的订单</a></li>
+                    <li class="my" style="font-size: 12px;">| <a href="">&nbsp;我的京东 v &nbsp;</a>|
+                        <div class="content">
+                            <p><span><a href="">待处理订单</a></span><span> <a href="">消息</a></span></p>
+                            <p><span><a href="">返修退换货</a></span> <span> <a href="">我的问答</a></span></p>
+                            <p><span><a href="">降价商品</a></span> <span> <a href="">我的关注</a></span></p>
+                            <p><span><a href="">我的京豆</a></span> <span> <a href="">我的优惠券</a></span></p>
+                            <p><span><a href="">我的白条</a></span> <span> <a href="">我的理财</a></span></p>
+                        </div>
+                    </li>
+                    <li><a href="">京东会员</a></li>|
+                    <li><a href="">企业采购</a></li>|
+                    <li><a href="">客户服务</a></li>|
+                    <li><a href="">网站导航</a></li>|
+                    <li><a href="">手机京东</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- 搜索 -->
+        <div id="l_search">
+            <section>
+                <div class="logo"></div>
+                <div id="cityWrap">
+                    <div class="biao"></div> <input type="button" id="cityChoice" value="浙江">
+                    <div class="biao2"></div>
+                </div>
+                <!-- search -->
+                <form action="javascript:;">
+                    <center> <input class="txt" type="text" /><input class="btn_search" type="submit" value="搜索" />
+                    </center>
+                    <ul class="list"></ul>
+                    <div class="holds"><a href="">满199减100</a><a href="">健康守护</a><a href="">中外美酒</a><a href="">个人护理</a><a href="">纸品家清</a></div>
+                </form>
+                <!-- ---- -->
+                <div id="shopping"><a href="./scr/列表/html/cart.html" style="color: #F30213;" target="blank">我的购物车</a>
+                    <span></span>
+                    <div class="box">
+                        <main>
+                            <table>
+                                <!-- 商品列表 -->
+                                <!-- <tr>
+                                    <td class="commodity">
+                    
+                                        <div>
+                                            <img src="../img/list1.jpg" alt="">
+                                        </div>
+                                        <h3>自营 KBNE纯色套头七分袖荷叶领A字连衣裙</h3>
+                                        <p>尺码</p>
+                                        <p>
+                                            <span>疯抢价</span>
+                                        </p>
+                    
+                                    </td>
+                                    <td class="spice ">
+                                        <h3>￥141</h3>
+                                        <p>￥539</p>
+                                    </td>
+                                    <td>
+                                        <div class="num ">
+                                            <a href="javaScript:;" class="add"> - </a><span class="num2">1</span><a href="javaScript:;" class="add">+</a>
+                                        </div>
+                                    </td>
+                                    <td class="sumsp ">
+                                        <h3>￥141</h3>
+                                    </td>
+                                    <td class="del ">
+                                        <a href="#">删除</a>
+                                    </td>
+                                </tr> -->
+
+                            </table>
+                            <div>
+                                <a href="javaScript:;">立即结算</a>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+                <div class="QR">扫码享受优惠
+                    <div class="qr"><img src="./images/QR.png" alt=""></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 导航 -->
+        <div id="nav">
+            <div class="area clearfix" style="width: 200px;">
+                <div class="category-content" id="guide_2">
+                    <div><span class="all-goods">京东超市频道分类<em></em></span></div>
+                    <div class="category" style="border: none; box-shadow: none;">
+                        <ul class="category-list" id="js_climit_li">
+                            <li class="appliance js_toggle relative first">
+                                <div class="category-info list-nz">
+                                    <h3 class="category-name b-category-name"><a id="s-category-289" href="./scr/列表/html/list.html" target="_blank" class="ml-22" title="女装">食品饮料</a></h3>
+                                    <p class="c-category-list limit-24"><a href="./scr/列表/html/list.html" target="_blank" title="连衣裙" id="s-goods-category-289-1">休闲食品</a><a href="./scr/列表/html/list.html" target="_blank" title="针织衫" id="s-goods-category-289-2">牛奶</a><a href="./scr/列表/html/list.html"
+                                            target="_blank" title="T恤" id="s-goods-category-289-3">饮料</a></p>
+                                    <em>&gt;</em>
+                                </div>
+                                <textarea class="menu-item-wrap none"><div class="menu-item menu-in top"><div class="area-in"><div class="area-bg"><div class="menu-srot"><div class="sort-side"><dl class="dl-sort"><dt><span title="外套">外套</span></dt><dd><a title="马甲" id="scategory-304" target="_blank" href="./scr/列表/html/list.html"><span  >马甲</span></a></dd><dd><a title="风衣/大衣" id="scategory-307" target="_blank" href="./scr/列表/html/list.html"><span  >风衣/大衣</span></a></dd><dd><a title="棉衣/棉服" id="scategory-309" target="_blank" href="./scr/列表/html/list.html"><span  >棉衣/棉服</span></a></dd><dd><a title="短外套" id="scategory-77878" target="_blank" href="./scr/列表/html/list.html"><span  >短外套</span></a></dd><dd><a title="皮衣" id="scategory-77912" target="_blank" href="./scr/列表/html/list.html"><span  >皮衣</span></a></dd><dd><a title="皮草" id="scategory-77913" target="_blank" href="./scr/列表/html/list.html"><span  >皮草</span></a></dd><dd><a title="小西装" id="scategory-77923" target="_blank" href="./scr/列表/html/list.html"><span  >小西装</span></a></dd><dd><a title="中长外套" id="scategory-106545" target="_blank" href="./scr/列表/html/list.html"><span  >中长外套</span></a></dd><dd><a title="羽绒服" id="scategory-184539" target="_blank" href="./scr/列表/html/list.html"><span  >羽绒服</span></a></dd></dl><dl class="dl-sort"><dt><span title="上装">上装</span></dt><dd><a title="T恤" id="scategory-295" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >T恤</span></a></dd><dd><a title="雪纺衫/蕾丝衫" id="scategory-297" target="_blank" href="./scr/列表/html/list.html"><span  >雪纺衫/蕾丝衫</span></a></dd><dd><a title="衬衫" id="scategory-299" target="_blank" href="./scr/列表/html/list.html"><span  >衬衫</span></a></dd><dd><a title="打底衫" id="scategory-301" target="_blank" href="./scr/列表/html/list.html"><span  >打底衫</span></a></dd><dd><a title="针织衫/毛衣" id="scategory-326" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >针织衫/毛衣</span></a></dd><dd><a title="披肩/坎肩/防晒衫" id="scategory-15418" target="_blank" href="./scr/列表/html/list.html"><span  >披肩/坎肩/防晒衫</span></a></dd><dd><a title="卫衣" id="scategory-77918" target="_blank" href="./scr/列表/html/list.html"><span  >卫衣</span></a></dd><dd><a title="吊带/背心" id="scategory-80614" target="_blank" href="./scr/列表/html/list.html"><span  >吊带/背心</span></a></dd></dl><dl class="dl-sort"><dt><span title="裙装">裙装</span></dt><dd><a title="半身裙" id="scategory-312" target="_blank" href="./scr/列表/html/list.html"><span  >半身裙</span></a></dd><dd><a title="连衣裙" id="scategory-320" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >连衣裙</span></a></dd><dd><a title="短裙" id="scategory-14376" target="_blank" href="./scr/列表/html/list.html"><span  >短裙</span></a></dd><dd><a title="西裙" id="scategory-106677" target="_blank" href="./scr/列表/html/list.html"><span  >西裙</span></a></dd></dl><dl class="dl-sort"><dt><span title="裤装">裤装</span></dt><dd><a title="牛仔裤" id="scategory-314" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >牛仔裤</span></a></dd><dd><a title="休闲裤" id="scategory-315" target="_blank" href="./scr/列表/html/list.html"><span  >休闲裤</span></a></dd><dd><a title="打底裤" id="scategory-316" target="_blank" href="./scr/列表/html/list.html"><span  >打底裤</span></a></dd><dd><a title="短裤/热裤" id="scategory-317" target="_blank" href="./scr/列表/html/list.html"><span  >短裤/热裤</span></a></dd><dd><a title="西裤/正装裤" id="scategory-95868" target="_blank" href="./scr/列表/html/list.html"><span  >西裤/正装裤</span></a></dd><dd><a title="皮裤" id="scategory-117277" target="_blank" href="./scr/列表/html/list.html"><span  >皮裤</span></a></dd><dd><a title="棉裤/羽绒裤" id="scategory-117352" target="_blank" href="./scr/列表/html/list.html"><span  >棉裤/羽绒裤</span></a></dd></dl><dl class="dl-sort"><dt><span title="特色女装">特色女装</span></dt><dd><a title="大码装" id="scategory-77881" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >大码装</span></a></dd><dd><a title="中老年装" id="scategory-77927" target="_blank" href="./scr/列表/html/list.html"><span  >中老年装</span></a></dd><dd><a title="礼服/晚装" id="scategory-80167" target="_blank" href="./scr/列表/html/list.html"><span  >礼服/晚装</span></a></dd><dd><a title="旗袍/唐装" id="scategory-80168" target="_blank" href="./scr/列表/html/list.html"><span  >旗袍/唐装</span></a></dd><dd><a title="婚纱" id="scategory-80171" target="_blank" href="./scr/列表/html/list.html"><span  >婚纱</span></a></dd><dd><a title="时尚套装" id="scategory-91668" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >时尚套装</span></a></dd><dd><a title="职业套装" id="scategory-91671" target="_blank" href="./scr/列表/html/list.html"><span  >职业套装</span></a></dd><dd><a title="孕妇装" id="scategory-156029" target="_blank" href="./scr/列表/html/list.html"><span  >孕妇装</span></a></dd><dd><a title="情侣装" id="scategory-162887" target="_blank" href="./scr/列表/html/list.html"><span  >情侣装</span></a></dd></dl></div>
+    </textarea>
+                            </li>
+
+                            <li class="appliance js_toggle relative">
+                                <div class="category-info list-nanz">
+                                    <h3 class="category-name b-category-name"><a id="s-category-292" href="./scr/列表/html/list.html" target="_blank" class="ml-22" title="男装">粮油副食</a></h3>
+                                    <p class="c-category-list limit-24"><a id="s-goods-category-292-1" href="./scr/列表/html/list.html" target="_blank" title="T恤">食用油</a><a id="s-goods-category-292-2" href="./scr/列表/html/list.html" target="_blank" title="衬衫">米面</a><a id="s-goods-category-292-3"
+                                            href="./scr/列表/html/list.html" target="_blank" title="牛仔裤">厨房调味</a></p>
+                                    <em>&gt;</em>
+                                </div>
+                                <textarea class="menu-item-wrap none"><div class="menu-item menu-in top"><div class="area-in"><div class="area-bg"><div class="menu-srot"><div class="sort-side"><dl class="dl-sort"><dt><span>上装</span></dt><dd><a title="男士T恤" id="scategory-12633" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >男士T恤</span></a></dd><dd><a title="Polo衫" id="scategory-12635" target="_blank" href="./scr/列表/html/list.html"><span  >Polo衫</span></a></dd><dd><a title="背心/马甲" id="scategory-12639" target="_blank" href="./scr/列表/html/list.html"><span  >背心/马甲</span></a></dd><dd><a title="男士衬衫" id="scategory-80051" target="_blank" href="./scr/列表/html/list.html"><span  >男士衬衫</span></a></dd><dd><a title="男士针织衫/毛衣" id="scategory-80069" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >男士针织衫/毛衣</span></a></dd></dl><dl class="dl-sort"><dt><span>外套</span></dt><dd><a title="男士棉衣" id="scategory-12617" target="_blank" href="./scr/列表/html/list.html"><span  >男士棉衣</span></a></dd><dd><a title="皮衣" id="scategory-12619" target="_blank" href="./scr/列表/html/list.html"><span  >皮衣</span></a></dd><dd><a title="夹克" id="scategory-12620" target="_blank" href="./scr/列表/html/list.html"><span  >夹克</span></a></dd><dd><a title="风衣" id="scategory-12621" target="_blank" href="./scr/列表/html/list.html"><span  >风衣</span></a></dd><dd><a title="西服" id="scategory-12622" target="_blank" href="./scr/列表/html/list.html"><span  >西服</span></a></dd><dd><a title="男式呢大衣" id="scategory-12623" target="_blank" href="./scr/列表/html/list.html"><span  >男式呢大衣</span></a></dd><dd><a title="男士卫衣" id="scategory-12632" target="_blank" href="./scr/列表/html/list.html"><span  >男士卫衣</span></a></dd><dd><a title="男式羽绒服" id="scategory-132415" target="_blank" href="./scr/列表/html/list.html"><span  >男式羽绒服</span></a></dd></dl><dl class="dl-sort"><dt><span>裤装</span></dt><dd><a title="男士西裤" id="scategory-12630" target="_blank" href="./scr/列表/html/list.html"><span  >男士西裤</span></a></dd><dd><a title="皮裤" id="scategory-12631" target="_blank" href="./scr/列表/html/list.html"><span  >皮裤</span></a></dd><dd><a title="男士牛仔裤" id="scategory-80064" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >男士牛仔裤</span></a></dd><dd><a title="男士休闲裤" id="scategory-80067" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >男士休闲裤</span></a></dd><dd><a title="棉裤" id="scategory-80070" target="_blank" href="./scr/列表/html/list.html"><span  >棉裤</span></a></dd></dl><dl class="dl-sort"><dt><span>套装</span></dt><dd><a title="西服套装" id="scategory-12637" target="_blank" href="./scr/列表/html/list.html"><span  >西服套装</span></a></dd><dd><a title="男士工装制服" id="scategory-80077" target="_blank" href="./scr/列表/html/list.html"><span  >男士工装制服</span></a></dd><dd><a title="民族服装" id="scategory-80131" target="_blank" href="./scr/列表/html/list.html"><span  >民族服装</span></a></dd></dl></div>
+    </textarea>
+                            </li>
+
+                            <li class="appliance js_toggle relative">
+                                <div class="category-info list-tz">
+                                    <h3 class="category-name b-category-name"><a id="s-category-293" href="./scr/列表/html/list.html" target="_blank" class="ml-22" title="童装">个人护理</a></h3>
+                                    <p class="c-category-list limit-24"><a id="s-goods-category-293-1" href="./scr/列表/html/list.html" target="_blank" title="T恤">洗发护发</a><a id="s-goods-category-293-2" href="./scr/列表/html/list.html" target="_blank" title="裙装">身体</a><a id="s-goods-category-293-3"
+                                            href="./scr/列表/html/list.html" target="_blank" title="童装裤子">口腔</a><a id="s-goods-category-293-4" href="./scr/列表/html/list.html" target="_blank" title="套装">女性</a></p>
+                                    <em>&gt;</em>
+                                </div>
+                                <textarea class="menu-item-wrap none"><div class="menu-item menu-in top"><div class="area-in"><div class="area-bg"><div class="menu-srot"><div class="sort-side"><dl class="dl-sort"><dt><span>上装</span></dt><dd><a title="儿童羽绒服/羽绒内胆" id="scategory-47587" target="_blank" href="./scr/列表/html/list.html"><span  >儿童羽绒服/羽绒内胆</span></a></dd><dd><a title="棉袄/棉服" id="scategory-47588" target="_blank" href="./scr/列表/html/list.html"><span  >棉袄/棉服</span></a></dd><dd><a title="童装卫衣/绒衫" id="scategory-47589" target="_blank" href="./scr/列表/html/list.html"><span  >童装卫衣/绒衫</span></a></dd><dd><a title="童装T恤" id="scategory-47590" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >童装T恤</span></a></dd><dd><a title="童装衬衫" id="scategory-47592" target="_blank" href="./scr/列表/html/list.html"><span  >童装衬衫</span></a></dd><dd><a title="童装毛衣/针织衫" id="scategory-47593" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >童装毛衣/针织衫</span></a></dd><dd><a title="童装背心/吊带衫" id="scategory-47595" target="_blank" href="./scr/列表/html/list.html"><span  >童装背心/吊带衫</span></a></dd><dd><a title="童装马甲" id="scategory-80635" target="_blank" href="./scr/列表/html/list.html"><span  >童装马甲</span></a></dd><dd><a title="披风/斗篷" id="scategory-80640" target="_blank" href="./scr/列表/html/list.html"><span  >披风/斗篷</span></a></dd><dd><a title="西服/小西装" id="scategory-86047" target="_blank" href="./scr/列表/html/list.html"><span  >西服/小西装</span></a></dd><dd><a title="外套/夹克/大衣" id="scategory-95909" target="_blank" href="./scr/列表/html/list.html"><span  >外套/夹克/大衣</span></a></dd></dl><dl class="dl-sort"><dt><span>下装</span></dt><dd><a title="女童裙装" id="scategory-47591" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >女童裙装</span></a></dd><dd><a title="童装打底裤" id="scategory-47594" target="_blank" href="./scr/列表/html/list.html"><span  >童装打底裤</span></a></dd><dd><a title="儿童牛仔裤" id="scategory-47596" target="_blank" href="./scr/列表/html/list.html"><span  >儿童牛仔裤</span></a></dd><dd><a title="童装裤子" id="scategory-80644" target="_blank" href="./scr/列表/html/list.html"><span  >童装裤子</span></a></dd></dl><dl class="dl-sort"><dt><span>儿童配饰</span></dt><dd><a title="肚围/护脐带/肚兜" id="scategory-77904" target="_blank" href="./scr/列表/html/list.html"><span  >肚围/护脐带/肚兜</span></a></dd><dd><a title="儿童配饰/发饰" id="scategory-77915" target="_blank" href="./scr/列表/html/list.html"><span  >儿童配饰/发饰</span></a></dd><dd><a title="儿童袜子" id="scategory-80652" target="_blank" href="./scr/列表/html/list.html"><span  >儿童袜子</span></a></dd></dl><dl class="dl-sort"><dt><span>儿童套装</span></dt><dd><a title="儿童泳衣/裤/帽" id="scategory-80632" target="_blank" href="./scr/列表/html/list.html"><span  >儿童泳衣/裤/帽</span></a></dd><dd><a title="儿童内衣裤/睡衣" id="scategory-80639" target="_blank" href="./scr/列表/html/list.html"><span  >儿童内衣裤/睡衣</span></a></dd><dd><a title="套装" id="scategory-80647" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >套装</span></a></dd></dl><dl class="dl-sort"><dt><span>亲子装</span></dt><dd><a title="亲子装/亲子时装" id="scategory-80641" target="_blank" href="./scr/列表/html/list.html"><span  >亲子装/亲子时装</span></a></dd></dl><dl class="dl-sort"><dt><span>童鞋</span></dt><dd><a title="单鞋" id="scategory-97285" target="_blank" href="./scr/列表/html/list.html"><span  >单鞋</span></a></dd><dd><a title="凉鞋" id="scategory-97303" target="_blank" href="./scr/列表/html/list.html"><span  >凉鞋</span></a></dd><dd><a title="运动鞋" id="scategory-97311" target="_blank" href="./scr/列表/html/list.html"><span  >运动鞋</span></a></dd></dl></div>
+    </textarea>
+                            </li>
+
+                            <li class="appliance js_toggle relative">
+                                <div class="category-info list-ny">
+                                    <h3 class="category-name b-category-name"><a id="s-category-344" href="./scr/列表/html/list.html" target="_blank" class="ml-22" title="内衣">护肤美妆</a></h3>
+                                    <p class="c-category-list limit-24"><a id="s-goods-category-344-1" href="./scr/列表/html/list.html" target="_blank" title="文胸">面部护肤</a><a id="s-goods-category-344-2" href="./scr/列表/html/list.html" target="_blank" title="内裤">香水彩妆</a><a id="s-goods-category-344-3"
+                                            href="./scr/列表/html/list.html" target="_blank" title="情趣内衣">男士</a></p>
+                                    <em>&gt;</em>
+                                </div>
+                                <textarea class="menu-item-wrap none"><div class="menu-item menu-in top"><div class="area-in"><div class="area-bg"><div class="menu-srot"><div class="sort-side"><dl class="dl-sort"><dt><span>袜子</span></dt><dd><a title="袜子" id="scategory-41264" target="_blank" href="./scr/列表/html/list.html"><span  >袜子</span></a></dd><dd><a title="吊袜带" id="scategory-80616" target="_blank" href="./scr/列表/html/list.html"><span  >吊袜带</span></a></dd></dl><dl class="dl-sort"><dt><span>内衣</span></dt><dd><a title="文胸" id="scategory-47608" target="_blank" href="./scr/列表/html/list.html"><span  >文胸</span></a></dd><dd><a title="情趣内衣" id="scategory-47610" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >情趣内衣</span></a></dd><dd><a title="抹胸" id="scategory-80619" target="_blank" href="./scr/列表/html/list.html"><span  >抹胸</span></a></dd><dd><a title="文胸套装" id="scategory-80631" target="_blank" href="./scr/列表/html/list.html"><span  >文胸套装</span></a></dd></dl><dl class="dl-sort"><dt><span>美体塑身</span></dt><dd><a title="塑身衣" id="scategory-47613" target="_blank" href="./scr/列表/html/list.html"><span  >塑身衣</span></a></dd><dd><a title="肚兜" id="scategory-80615" target="_blank" href="./scr/列表/html/list.html"><span  >肚兜</span></a></dd><dd><a title="塑身美体衣" id="scategory-80621" target="_blank" href="./scr/列表/html/list.html"><span  >塑身美体衣</span></a></dd><dd><a title="塑身美体裤" id="scategory-80622" target="_blank" href="./scr/列表/html/list.html"><span  >塑身美体裤</span></a></dd><dd><a title="塑身腰封/腰夹" id="scategory-80623" target="_blank" href="./scr/列表/html/list.html"><span  >塑身腰封/腰夹</span></a></dd><dd><a title="塑身分体套装" id="scategory-80624" target="_blank" href="./scr/列表/html/list.html"><span  >塑身分体套装</span></a></dd><dd><a title="塑身连体衣" id="scategory-80625" target="_blank" href="./scr/列表/html/list.html"><span  >塑身连体衣</span></a></dd></dl><dl class="dl-sort"><dt><span>保暖</span></dt><dd><a title="保暖上装" id="scategory-77895" target="_blank" href="./scr/列表/html/list.html"><span  >保暖上装</span></a></dd><dd><a title="保暖裤" id="scategory-77926" target="_blank" href="./scr/列表/html/list.html"><span  >保暖裤</span></a></dd><dd><a title="保暖套装" id="scategory-77929" target="_blank" href="./scr/列表/html/list.html"><span  >保暖套装</span></a></dd></dl><dl class="dl-sort"><dt><span>家居服</span></dt><dd><a title="睡衣上装" id="scategory-80626" target="_blank" href="./scr/列表/html/list.html"><span  >睡衣上装</span></a></dd><dd><a title="睡裤/家居裤" id="scategory-80627" target="_blank" href="./scr/列表/html/list.html"><span  >睡裤/家居裤</span></a></dd><dd><a title="睡裙/家居裙" id="scategory-80628" target="_blank" href="./scr/列表/html/list.html"><span  >睡裙/家居裙</span></a></dd><dd><a title="睡衣/家居套装" id="scategory-80629" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >睡衣/家居套装</span></a></dd><dd><a title="睡袍/浴袍" id="scategory-80630" target="_blank" href="./scr/列表/html/list.html"><span  >睡袍/浴袍</span></a></dd></dl></div>
+    </textarea>
+                            </li>
+
+                            <li class="appliance js_toggle relative h73">
+                                <div class="category-info list-xb">
+                                    <h3 class="category-name b-category-name"><a id="s-category-343" href="./scr/列表/html/list.html" target="_blank" class="ml-22" title="箱包">家具清洁</a></h3>
+                                    <p class="c-category-list limit-24 pdb11"><a id="s-goods-category-343-1" href="./scr/列表/html/list.html" target="_blank" title="围巾">衣物清洁</a><a id="s-goods-category-343-2" href="./scr/列表/html/list.html" target="_blank" title="手套">厨房用品</a><a id="s-goods-category-343-3"
+                                            href="./scr/列表/html/list.html" target="_blank" title="单肩包">纸品湿巾</a></p>
+                                    <em>&gt;</em>
+                                </div>
+                                <textarea class="menu-item-wrap none"><div class="menu-item menu-in top"><div class="area-in"><div class="area-bg"><div class="menu-srot"><div class="sort-side"><dl class="dl-sort"><dt><span>包袋</span></dt><dd><a title="单肩包" id="scategory-47597" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >单肩包</span></a></dd><dd><a title="斜挎包" id="scategory-47598" target="_blank" href="./scr/列表/html/list.html"><span  >斜挎包</span></a></dd><dd><a title="手提包" id="scategory-47599" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >手提包</span></a></dd><dd><a title="手包" id="scategory-47601" target="_blank" href="./scr/列表/html/list.html"><span  >手包</span></a></dd><dd><a title="钱包" id="scategory-47602" target="_blank" href="./scr/列表/html/list.html"><span  >钱包</span></a></dd><dd><a title="腰包" id="scategory-47603" target="_blank" href="./scr/列表/html/list.html"><span  >腰包</span></a></dd><dd><a title="卡包" id="scategory-47605" target="_blank" href="./scr/列表/html/list.html"><span  >卡包</span></a></dd><dd><a title="胸包" id="scategory-80164" target="_blank" href="./scr/列表/html/list.html"><span  >胸包</span></a></dd></dl><dl class="dl-sort"><dt><span>旅行包</span></dt><dd><a title="双肩包" id="scategory-47600" target="_blank" href="./scr/列表/html/list.html"><span  >双肩包</span></a></dd><dd><a title="两用包" id="scategory-47604" target="_blank" href="./scr/列表/html/list.html"><span  >两用包</span></a></dd><dd><a title="其他" id="scategory-47606" target="_blank" href="./scr/列表/html/list.html"><span  >其他</span></a></dd><dd><a title="旅行箱" id="scategory-80873" target="_blank" href="./scr/列表/html/list.html"><span  >旅行箱</span></a></dd><dd><a title="旅行袋" id="scategory-80875" target="_blank" href="./scr/列表/html/list.html"><span  >旅行袋</span></a></dd></dl><dl class="dl-sort"><dt><span>饰物</span></dt><dd><a title="围巾/披肩" id="scategory-47618" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >围巾/披肩</span></a></dd><dd><a title="手套" id="scategory-48307" target="_blank" href="./scr/列表/html/list.html"><span  >手套</span></a></dd><dd><a title="眼镜" id="scategory-103011" target="_blank" href="./scr/列表/html/list.html"><span  >眼镜</span></a></dd></dl><dl class="dl-sort"><dt><span>配饰</span></dt><dd><a title="项链" id="scategory-48304" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >项链</span></a></dd><dd><a title="腰带/皮带" id="scategory-48305" target="_blank" href="./scr/列表/html/list.html"><span  >腰带/皮带</span></a></dd><dd><a title="头饰" id="scategory-48308" target="_blank" href="./scr/列表/html/list.html"><span  >头饰</span></a></dd></dl></div>
+    </textarea>
+                            </li>
+
+                            <!-- ======copy li -->
+                            <li class="appliance js_toggle relative">
+                                <div class="category-info list-nanz">
+                                    <h3 class="category-name b-category-name"><a id="s-category-343" href="./scr/列表/html/list.html" target="_blank" class="ml-22" title="箱包">中外名酒</a></h3>
+                                    <p class="c-category-list limit-24 pdb11"><a id="s-goods-category-343-1" href="./scr/列表/html/list.html" target="_blank" title="围巾">白酒</a><a id="s-goods-category-343-2" href="./scr/列表/html/list.html" target="_blank" title="手套">红酒/起泡</a><a id="s-goods-category-343-3"
+                                            href="./scr/列表/html/list.html" target="_blank" title="单肩包">啤酒</a></p>
+                                    <em>&gt;</em>
+                                </div>
+                                <textarea class="menu-item-wrap none"><div class="menu-item menu-in top"><div class="area-in"><div class="area-bg"><div class="menu-srot"><div class="sort-side"><dl class="dl-sort"><dt><span>包袋</span></dt><dd><a title="单肩包" id="scategory-47597" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >单肩包</span></a></dd><dd><a title="斜挎包" id="scategory-47598" target="_blank" href="./scr/列表/html/list.html"><span  >斜挎包</span></a></dd><dd><a title="手提包" id="scategory-47599" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >手提包</span></a></dd><dd><a title="手包" id="scategory-47601" target="_blank" href="./scr/列表/html/list.html"><span  >手包</span></a></dd><dd><a title="钱包" id="scategory-47602" target="_blank" href="./scr/列表/html/list.html"><span  >钱包</span></a></dd><dd><a title="腰包" id="scategory-47603" target="_blank" href="./scr/列表/html/list.html"><span  >腰包</span></a></dd><dd><a title="卡包" id="scategory-47605" target="_blank" href="./scr/列表/html/list.html"><span  >卡包</span></a></dd><dd><a title="胸包" id="scategory-80164" target="_blank" href="./scr/列表/html/list.html"><span  >胸包</span></a></dd></dl><dl class="dl-sort"><dt><span>旅行包</span></dt><dd><a title="双肩包" id="scategory-47600" target="_blank" href="./scr/列表/html/list.html"><span  >双肩包</span></a></dd><dd><a title="两用包" id="scategory-47604" target="_blank" href="./scr/列表/html/list.html"><span  >两用包</span></a></dd><dd><a title="其他" id="scategory-47606" target="_blank" href="./scr/列表/html/list.html"><span  >其他</span></a></dd><dd><a title="旅行箱" id="scategory-80873" target="_blank" href="./scr/列表/html/list.html"><span  >旅行箱</span></a></dd><dd><a title="旅行袋" id="scategory-80875" target="_blank" href="./scr/列表/html/list.html"><span  >旅行袋</span></a></dd></dl><dl class="dl-sort"><dt><span>饰物</span></dt><dd><a title="围巾/披肩" id="scategory-47618" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >围巾/披肩</span></a></dd><dd><a title="手套" id="scategory-48307" target="_blank" href="./scr/列表/html/list.html"><span  >手套</span></a></dd><dd><a title="眼镜" id="scategory-103011" target="_blank" href="./scr/列表/html/list.html"><span  >眼镜</span></a></dd></dl><dl class="dl-sort"><dt><span>配饰</span></dt><dd><a title="项链" id="scategory-48304" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >项链</span></a></dd><dd><a title="腰带/皮带" id="scategory-48305" target="_blank" href="./scr/列表/html/list.html"><span  >腰带/皮带</span></a></dd><dd><a title="头饰" id="scategory-48308" target="_blank" href="./scr/列表/html/list.html"><span  >头饰</span></a></dd></dl></div>
+    </textarea>
+                            </li>
+
+                            <li class="appliance js_toggle relative">
+                                <div class="category-info list-xb">
+                                    <h3 class="category-name b-category-name"><a id="s-category-343" href="./scr/列表/html/list.html" target="_blank" class="ml-22" title="箱包">京东生鲜</a></h3>
+                                    <p class="c-category-list limit-24 pdb11"><a id="s-goods-category-343-1" href="./scr/列表/html/list.html" target="_blank" title="围巾">橙子</a><a id="s-goods-category-343-2" href="./scr/列表/html/list.html" target="_blank" title="手套">奇异果</a><a id="s-goods-category-343-3"
+                                            href="./scr/列表/html/list.html" target="_blank" title="单肩包">北极虾</a></p>
+                                    <em>&gt;</em>
+                                </div>
+                                <textarea class="menu-item-wrap none"><div class="menu-item menu-in top"><div class="area-in"><div class="area-bg"><div class="menu-srot"><div class="sort-side"><dl class="dl-sort"><dt><span>包袋</span></dt><dd><a title="单肩包" id="scategory-47597" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >单肩包</span></a></dd><dd><a title="斜挎包" id="scategory-47598" target="_blank" href="./scr/列表/html/list.html"><span  >斜挎包</span></a></dd><dd><a title="手提包" id="scategory-47599" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >手提包</span></a></dd><dd><a title="手包" id="scategory-47601" target="_blank" href="./scr/列表/html/list.html"><span  >手包</span></a></dd><dd><a title="钱包" id="scategory-47602" target="_blank" href="./scr/列表/html/list.html"><span  >钱包</span></a></dd><dd><a title="腰包" id="scategory-47603" target="_blank" href="./scr/列表/html/list.html"><span  >腰包</span></a></dd><dd><a title="卡包" id="scategory-47605" target="_blank" href="./scr/列表/html/list.html"><span  >卡包</span></a></dd><dd><a title="胸包" id="scategory-80164" target="_blank" href="./scr/列表/html/list.html"><span  >胸包</span></a></dd></dl><dl class="dl-sort"><dt><span>旅行包</span></dt><dd><a title="双肩包" id="scategory-47600" target="_blank" href="./scr/列表/html/list.html"><span  >双肩包</span></a></dd><dd><a title="两用包" id="scategory-47604" target="_blank" href="./scr/列表/html/list.html"><span  >两用包</span></a></dd><dd><a title="其他" id="scategory-47606" target="_blank" href="./scr/列表/html/list.html"><span  >其他</span></a></dd><dd><a title="旅行箱" id="scategory-80873" target="_blank" href="./scr/列表/html/list.html"><span  >旅行箱</span></a></dd><dd><a title="旅行袋" id="scategory-80875" target="_blank" href="./scr/列表/html/list.html"><span  >旅行袋</span></a></dd></dl><dl class="dl-sort"><dt><span>饰物</span></dt><dd><a title="围巾/披肩" id="scategory-47618" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >围巾/披肩</span></a></dd><dd><a title="手套" id="scategory-48307" target="_blank" href="./scr/列表/html/list.html"><span  >手套</span></a></dd><dd><a title="眼镜" id="scategory-103011" target="_blank" href="./scr/列表/html/list.html"><span  >眼镜</span></a></dd></dl><dl class="dl-sort"><dt><span>配饰</span></dt><dd><a title="项链" id="scategory-48304" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >项链</span></a></dd><dd><a title="腰带/皮带" id="scategory-48305" target="_blank" href="./scr/列表/html/list.html"><span  >腰带/皮带</span></a></dd><dd><a title="头饰" id="scategory-48308" target="_blank" href="./scr/列表/html/list.html"><span  >头饰</span></a></dd></dl></div>
+    </textarea>
+                            </li>
+
+                            <li class="appliance js_toggle relative">
+                                <div class="category-info list-xb">
+                                    <h3 class="category-name b-category-name"><a id="s-category-343" href="./scr/列表/html/list.html" target="_blank" class="ml-22" title="箱包">居家生活</a></h3>
+                                    <p class="c-category-list limit-24 pdb11"><a id="s-goods-category-343-1" href="./scr/列表/html/list.html" target="_blank" title="围巾">置物架</a><a id="s-goods-category-343-2" href="./scr/列表/html/list.html" target="_blank" title="手套">五金</a><a id="s-goods-category-343-3"
+                                            href="./scr/列表/html/list.html" target="_blank" title="单肩包">绿植</a>
+                                        <a id="s-goods-category-343-4" href="./scr/列表/html/list.html" target="_blank" title="单肩包">狗粮</a></p>
+                                    <em>&gt;</em>
+                                </div>
+                                <textarea class="menu-item-wrap none"><div class="menu-item menu-in top"><div class="area-in"><div class="area-bg"><div class="menu-srot"><div class="sort-side"><dl class="dl-sort"><dt><span>包袋</span></dt><dd><a title="单肩包" id="scategory-47597" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >单肩包</span></a></dd><dd><a title="斜挎包" id="scategory-47598" target="_blank" href="./scr/列表/html/list.html"><span  >斜挎包</span></a></dd><dd><a title="手提包" id="scategory-47599" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >手提包</span></a></dd><dd><a title="手包" id="scategory-47601" target="_blank" href="./scr/列表/html/list.html"><span  >手包</span></a></dd><dd><a title="钱包" id="scategory-47602" target="_blank" href="./scr/列表/html/list.html"><span  >钱包</span></a></dd><dd><a title="腰包" id="scategory-47603" target="_blank" href="./scr/列表/html/list.html"><span  >腰包</span></a></dd><dd><a title="卡包" id="scategory-47605" target="_blank" href="./scr/列表/html/list.html"><span  >卡包</span></a></dd><dd><a title="胸包" id="scategory-80164" target="_blank" href="./scr/列表/html/list.html"><span  >胸包</span></a></dd></dl><dl class="dl-sort"><dt><span>旅行包</span></dt><dd><a title="双肩包" id="scategory-47600" target="_blank" href="./scr/列表/html/list.html"><span  >双肩包</span></a></dd><dd><a title="两用包" id="scategory-47604" target="_blank" href="./scr/列表/html/list.html"><span  >两用包</span></a></dd><dd><a title="其他" id="scategory-47606" target="_blank" href="./scr/列表/html/list.html"><span  >其他</span></a></dd><dd><a title="旅行箱" id="scategory-80873" target="_blank" href="./scr/列表/html/list.html"><span  >旅行箱</span></a></dd><dd><a title="旅行袋" id="scategory-80875" target="_blank" href="./scr/列表/html/list.html"><span  >旅行袋</span></a></dd></dl><dl class="dl-sort"><dt><span>饰物</span></dt><dd><a title="围巾/披肩" id="scategory-47618" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >围巾/披肩</span></a></dd><dd><a title="手套" id="scategory-48307" target="_blank" href="./scr/列表/html/list.html"><span  >手套</span></a></dd><dd><a title="眼镜" id="scategory-103011" target="_blank" href="./scr/列表/html/list.html"><span  >眼镜</span></a></dd></dl><dl class="dl-sort"><dt><span>配饰</span></dt><dd><a title="项链" id="scategory-48304" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >项链</span></a></dd><dd><a title="腰带/皮带" id="scategory-48305" target="_blank" href="./scr/列表/html/list.html"><span  >腰带/皮带</span></a></dd><dd><a title="头饰" id="scategory-48308" target="_blank" href="./scr/列表/html/list.html"><span  >头饰</span></a></dd></dl></div>
+    </textarea>
+                            </li>
+
+                            <!-- ----- -->
+                            <li class="appliance js_toggle relative last h73">
+                                <div class="category-info list-xl">
+                                    <h3 class="category-name b-category-name"><a id="s-category-342" href="./scr/列表/html/list.html" target="_blank" class="ml-22" title="鞋类">母婴用品</a></h3>
+                                    <p class="c-category-list limit-24 pdb11"><a id="s-goods-category-342-1" href="./scr/列表/html/list.html" target="_blank" title="单鞋">奶粉</a><a id="s-goods-category-342-2" href="./scr/列表/html/list.html" target="_blank" title="女靴子">尿裤</a><a id="s-goods-category-342-3"
+                                            href="./scr/列表/html/list.html" target="_blank" title="运动/休闲服">玩具</a>
+                                    </p>
+                                    <em>&gt;</em>
+                                </div>
+                                <textarea class="menu-item-wrap none"><div class="menu-item menu-in top"><div class="area-in"><div class="area-bg"><div class="menu-srot"><div class="sort-side"><dl class="dl-sort"><dt><span>女鞋</span></dt><dd><a title="女帆布鞋" id="scategory-80113" target="_blank" href="./scr/列表/html/list.html"><span  >女帆布鞋</span></a></dd><dd><a title="女凉鞋" id="scategory-80115" target="_blank" href="./scr/列表/html/list.html"><span  >女凉鞋</span></a></dd><dd><a title="女拖鞋" id="scategory-80116" target="_blank" href="./scr/列表/html/list.html"><span  >女拖鞋</span></a></dd><dd><a title="雨鞋" id="scategory-80117" target="_blank" href="./scr/列表/html/list.html"><span  >雨鞋</span></a></dd><dd><a title="女靴子" id="scategory-82963" target="_blank" href="./scr/列表/html/list.html"><span  >女靴子</span></a></dd><dd><a title="女单鞋" id="scategory-93356" target="_blank" href="./scr/列表/html/list.html"><span  class="red"  >女单鞋</span></a></dd><dd><a title="女式皮鞋" id="scategory-93364" target="_blank" href="./scr/列表/html/list.html"><span  >女式皮鞋</span></a></dd><dd><a title="女士沙滩鞋" id="scategory-93377" target="_blank" href="./scr/列表/html/list.html"><span  >女士沙滩鞋</span></a></dd><dd><a title="女式板鞋" id="scategory-93422" target="_blank" href="./scr/列表/html/list.html"><span  >女式板鞋</span></a></dd></dl><dl class="dl-sort"><dt><span>男鞋</span></dt><dd><a title="男低帮鞋" id="scategory-80112" target="_blank" href="./scr/列表/html/list.html"><span  >男低帮鞋</span></a></dd><dd><a title="男高帮鞋" id="scategory-80114" target="_blank" href="./scr/列表/html/list.html"><span  >男高帮鞋</span></a></dd><dd><a title="男式板鞋" id="scategory-93264" target="_blank" href="./scr/列表/html/list.html"><span  >男式板鞋</span></a></dd><dd><a title="男士皮鞋" id="scategory-93354" target="_blank" href="./scr/列表/html/list.html"><span  >男士皮鞋</span></a></dd><dd><a title="男帆布鞋" id="scategory-93366" target="_blank" href="./scr/列表/html/list.html"><span  >男帆布鞋</span></a></dd><dd><a title="男凉鞋" id="scategory-95930" target="_blank" href="./scr/列表/html/list.html"><span  >男凉鞋</span></a></dd><dd><a title="休闲鞋" id="scategory-96016" target="_blank" href="./scr/列表/html/list.html"><span  >休闲鞋</span></a></dd></dl><dl class="dl-sort"><dt><span>户外</span></dt><dd><a title="连身衣" id="scategory-80487" target="_blank" href="./scr/列表/html/list.html"><span  >连身衣</span></a></dd><dd><a title="冲锋衣" id="scategory-100497" target="_blank" href="./scr/列表/html/list.html"><span  >冲锋衣</span></a></dd><dd><a title="登山鞋" id="scategory-100512" target="_blank" href="./scr/列表/html/list.html"><span  >登山鞋</span></a></dd><dd><a title="徒步鞋" id="scategory-100551" target="_blank" href="./scr/列表/html/list.html"><span  >徒步鞋</span></a></dd></dl><dl class="dl-sort"><dt><span></span></dt></dl><dl class="dl-sort"><dt><span>运动鞋</span></dt><dd><a title="运动鞋" id="scategory-77870" target="_blank" href="./scr/列表/html/list.html"><span  >运动鞋</span></a></dd></dl><dl class="dl-sort"><dt><span>运动服</span></dt><dd><a title="运动/休闲服" id="scategory-77871" target="_blank" href="./scr/列表/html/list.html"><span  >运动/休闲服</span></a></dd><dd><a title="运动T恤" id="scategory-77875" target="_blank" href="./scr/列表/html/list.html"><span  >运动T恤</span></a></dd><dd><a title="运动卫衣/套头衫" id="scategory-77877" target="_blank" href="./scr/列表/html/list.html"><span  >运动卫衣/套头衫</span></a></dd><dd><a title="运动风衣" id="scategory-77879" target="_blank" href="./scr/列表/html/list.html"><span  >运动风衣</span></a></dd><dd><a title="运动茄克/外套" id="scategory-77880" target="_blank" href="./scr/列表/html/list.html"><span  >运动茄克/外套</span></a></dd><dd><a title="运动套装" id="scategory-77889" target="_blank" href="./scr/列表/html/list.html"><span  >运动套装</span></a></dd><dd><a title="运动裤" id="scategory-77892" target="_blank" href="./scr/列表/html/list.html"><span  >运动裤</span></a></dd><dd><a title="运动球服" id="scategory-77897" target="_blank" href="./scr/列表/html/list.html"><span  >运动球服</span></a></dd><dd><a title="运动马甲" id="scategory-77898" target="_blank" href="./scr/列表/html/list.html"><span  >运动马甲</span></a></dd></dl><dl class="dl-sort"><dt><span>运动健身</span></dt><dd><a title="泳装" id="scategory-53764" target="_blank" href="./scr/列表/html/list.html"><span  >泳装</span></a></dd></dl></div>
+    </textarea>
+                            </li>
+                            <!-- ---- -->
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- _banner -->
+            <div class="nav_content">
+                <div id="slider" class="big_slider">
+                    <ul class="slider_list">
+                        <li>
+                            <a href="#"><img src="./scr/banner/img/59e5df51Na34c52da.jpg"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./scr/banner/img/59e6f772Nde97ca5e.jpg"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./scr/banner/img/59e8ab7dN48b529e7.jpg"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./scr/banner/img/59e89be7N0031c258.jpg"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./scr/banner/img/59e980a2Nc4314079.jpg"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./scr/banner/img/59ed6dd8Ncaee86ed.jpg"></a>
+                        </li>
+                    </ul>
+                    <div class="slider_icon">
+                        <i class="btn btn_act"></i>
+                        <i class="btn"></i>
+                        <i class="btn"></i>
+                        <i class="btn"></i>
+                        <i class="btn"></i>
+                        <i class="btn"></i>
+                    </div>
+                    <a href="javascript:;" class="arrow prve">
+                        <span class="slider_left"></span>
+                    </a>
+                    <a href="javascript:;" class="arrow next">
+                        <span class="slider_right"></span>
+                    </a>
+                </div>
+            </div>
+            <!-- title -->
+            <div class="title_nav">
+                <ul>
+                    <li><a href="">超市首页</a></li>｜
+                    <li><a href="">超值量贩</a></li>｜
+                    <li><a href="">京东生鲜</a></li>｜
+                    <li><a href="">品牌特卖</a></li>｜
+                    <li><a href="">山姆会员店</a></li>｜
+                    <li><a href="">企业采购</a></li>｜
+                </ul>
+
+                <div class="news">
+                    <i>满99免运费</i>
+                    <span>100%渠道保证</span>
+                </div>
+            </div>
+
+            <!-- 右_ban -->
+            <aside>
+                <!-- 券 -->
+                <div class="ticket">
+                    <p class="tips_title">- 每日领券 -</p>
+                    <div class="tip">总有你想要的</div>
+
+                    <div class="ticket_wrap">
+                        <div class="price">
+                            <p>¥ <em>10</em></p>
+                            <p>满11可用</p>
+                            <div class="circle1"></div>
+                            <div class="circle2"></div>
+                        </div>
+
+                        <p class="rule">仅可购买保洁洗护发部分商品</p>
+                        <div class="more">更多好券</div>
+
+                    </div>
+                </div>
+
+                <div class="minibanner ticket">
+                    <p>— &nbsp; —</p>
+                    <p>小物件 大用途</p>
+                    <div class="nav_content">
+                        <div id="min_slider">
+                            <ul class="slider_list">
+                                <li>
+                                    <a href="#"><img src="./scr/banner/img/59e5df51Na34c52da.jpg"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./scr/banner/img/59e6f772Nde97ca5e.jpg"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./scr/banner/img/59e8ab7dN48b529e7.jpg"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./scr/banner/img/59e89be7N0031c258.jpg"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./scr/banner/img/59e980a2Nc4314079.jpg"></a>
+                                </li>
+                            </ul>
+                            <div class="slider_icon">
+                                <i class="btn min_btn"></i>
+                                <i class="btn min_btn"></i>
+                                <i class="btn min_btn"></i>
+                                <i class="btn min_btn"></i>
+                                <i class="btn min_btn"></i>
+                            </div>
+                        </div>
+
+                        <div class="inner">
+                            进入>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="images">
+                <img src="./images/t1.webp" alt="">
+                <img src="./images/t2.webp" alt="">
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- 侧边栏 -->
+    <div class="J-global-toolbar">
+        <div class="toolbar-wrap J-wrap">
+            <div class="toolbar">
+                <div class="toolbar-panels J-panel">
+                    <div style="visibility: hidden;" class="J-content toolbar-panel tbar-panel-cart toolbar-animate-out">
+                        <h3 class="tbar-panel-header J-panel-header">
+                            <a href="" class="title"><i></i><em class="title">购物车</em></a>
+                            <span class="close-panel J-close"></span>
+                        </h3>
+                        <div class="tbar-panel-main">
+                            <div class="tbar-panel-content J-panel-content">
+                                <div id="J-cart-tips" class="tbar-tipbox hide">
+                                    <div class="tip-inner">
+                                        <span class="tip-text">还没有登录，登录后商品将被保存</span>
+                                        <a href="#none" class="tip-btn J-login">登录</a>
+                                    </div>
+                                </div>
+                                <div id="J-cart-render">
+                                    <main>
+                                        <table>
+                                            <!-- 商品列表 -->
+                                            <!-- <tr>
+                                                <td class="commodity">
+                                
+                                                    <div>
+                                                        <img src="../img/list1.jpg" alt="">
+                                                    </div>
+                                                    <h3>自营 KBNE纯色套头七分袖荷叶领A字连衣裙</h3>
+                                                    <p>尺码</p>
+                                                    <p>
+                                                        <span>疯抢价</span>
+                                                    </p>
+                                
+                                                </td>
+                                                <td class="spice ">
+                                                    <h3>￥141</h3>
+                                                    <p>￥539</p>
+                                                </td>
+                                                <td>
+                                                    <div class="num ">
+                                                        <a href="javaScript:;" class="add"> - </a><span class="num2">1</span><a href="javaScript:;" class="add">+</a>
+                                                    </div>
+                                                </td>
+                                                <td class="sumsp ">
+                                                    <h3>￥141</h3>
+                                                </td>
+                                                <td class="del ">
+                                                    <a href="#">删除</a>
+                                                </td>
+                                            </tr> -->
+
+                                        </table>
+                                        <div>
+                                            <a href="javaScript:;">立即结算</a>
+                                        </div>
+                                    </main>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tbar-panel-footer J-panel-footer">
+                            <div class="tbar-checkout">
+                                <a class="jtc-btn J-btn" href="./scr/列表/html/cart.html" target="_blank">去购物车结算</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="visibility: hidden;" data-name="follow" class="J-content toolbar-panel tbar-panel-follow">
+                        <h3 class="tbar-panel-header J-panel-header">
+                            <a href="#" target="_blank" class="title"> <i></i> <em class="title">我的关注</em> </a>
+                            <span class="close-panel J-close"></span>
+                        </h3>
+                        <div class="tbar-panel-main">
+                            <div class="tbar-panel-content J-panel-content">
+                                <div class="tbar-tipbox2">
+                                    <div class="tip-inner"> <i class="i-loading"></i> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tbar-panel-footer J-panel-footer"></div>
+                    </div>
+
+                    <div style="visibility: hidden;" class="J-content toolbar-panel tbar-panel-history toolbar-animate-in">
+                        <h3 class="tbar-panel-header J-panel-header">
+                            <a href="#" target="_blank" class="title"> <i></i> <em class="title">我的足迹</em> </a>
+                            <span class="close-panel J-close"></span>
+                        </h3>
+                        <div class="tbar-panel-main">
+                            <div class="tbar-panel-content J-panel-content">
+                                <div class="jt-history-wrap">
+                                    <ul>
+                                        <li class="jth-item">
+                                            <a href="#" class="img-wrap"> <img src="http://img10.360buyimg.com/n0/s100x100_g9/M03/0C/18/rBEHalCKCk8IAAAAAAD5nbR5xOAAACfgQENi_wAAPm1269.jpg" height="100" width="100" /> </a>
+                                            <a class="add-cart-button" href="#" target="_blank">加入购物车</a>
+                                            <a href="#" target="_blank" class="price">￥498.00</a>
+                                        </li>
+                                        <li class="jth-item">
+                                            <a href="#" class="img-wrap"> <img src="http://img10.360buyimg.com/n0/s100x100_g9/M03/0C/18/rBEHalCKCk8IAAAAAAD5nbR5xOAAACfgQENi_wAAPm1269.jpg" height="100" width="100" /></a>
+                                            <a class="add-cart-button" href="#" target="_blank">加入购物车</a>
+                                            <a href="#" target="_blank" class="price">￥498.00</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="history-bottom-more" target="_blank">查看更多足迹商品 &gt;&gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tbar-panel-footer J-panel-footer"></div>
+                    </div>
+                </div>
+
+                <div class="toolbar-header"></div>
+
+                <div class="toolbar-tabs J-tab">
+                    <div class="toolbar-tab tbar-tab-cart">
+                        <i class="tab-ico"></i>
+                        <em class="tab-text ">购物车</em>
+                        <span class="tab-sub J-count ">1</span>
+                    </div>
+                    <div class=" toolbar-tab tbar-tab-follow">
+                        <i class="tab-ico"></i>
+                        <em class="tab-text">我的关注</em>
+                        <span class="tab-sub J-count hide">0</span>
+                    </div>
+                    <div class=" toolbar-tab tbar-tab-history ">
+                        <i class="tab-ico"></i>
+                        <em class="tab-text">我的足迹</em>
+                        <span class="tab-sub J-count hide">0</span>
+                    </div>
+                </div>
+
+                <div class="toolbar-footer">
+                    <div class="toolbar-tab tbar-tab-top">
+                        <a href="#"> <i class="tab-ico  "></i> <em class="footer-tab-text">顶部</em> </a>
+                    </div>
+                    <div class=" toolbar-tab tbar-tab-feedback">
+                        <a href="#" target="_blank"> <i class="tab-ico"></i>
+                            <em class="footer-tab-text ">反馈</em> </a>
+                    </div>
+                </div>
+
+                <div class="toolbar-mini"></div>
+
+            </div>
+
+            <div id="J-toolbar-load-hook"></div>
+
+        </div>
+    </div>
+
+    <!--右侧固定导航-->
+    <ul class="fixedmeau" style="z-index: 999999;">
+        <li class="f active"><i>热卖商品</i><span>超级量贩</span></li>
+        <li class="f"><i>2F</i><span>品牌特卖</span></li>
+        <li class="f"><i>3F</i><span>热卖商品</span></li>
+        <li class="f"><i>4F</i><span>休闲零食</span></li>
+        <li class="f"><i>5F</i><span>奶制品</span></li>
+        <li class="f"><i>6F</i><span>清洁用品</span></li>
+        <li class="totop"><span>回到顶部</span></li>
+    </ul>
+
+    <!-- 楼层栏  内容-->
+    <div id="nav_fixed">
+        <!--头部-->
+        <div class="header_box">
+            <div class="header">
+                <div class="box">
+                    <p></p>
+                    <em>限时抢购</em>|
+                    <span style="width: 128px; font-weight: normal;">距本场结束还有</span>
+                    <div class="se-count">
+                        <!-- <div class="se-day"></div> -->
+                        <div class="se-hour"><span class="se-txt">00</span></div><i>:</i>
+                        <div class="se-min"><span class="se-txt">00</span></div><i>:</i>
+                        <div class="se-sec"><span class="se-txt">00</span></div>
+                    </div>
+                </div>
+
+                <div class="shop">
+                    <ul>
+                        <li>
+                            <div>
+                                <img class="img" src="//img10.360buyimg.com/jdcms/s260x260_jfs/t1/73088/12/14395/296831/5dbabaf9Eea1f3000/3e7e628e7d1b5f46.jpg!q80.webp" alt="晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色">
+                                <p class="img_name">晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色</p>
+                            </div>
+                            <p class="shop_price">
+                                <span class="price_new">¥17.90</span>
+                                <del class="csi_price_origin" style="font-weight: 300;font-size: 12px;color: #999;cursor: text;">¥32.20</del>
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img class="img" src="//img11.360buyimg.com/jdcms/s260x260_jfs/t1/57946/31/8439/190516/5d5e56a3E4c5bcecd/db3f3f216662138c.jpg!q80.webp" alt="晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色">
+                                <p class="img_name">晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色</p>
+                            </div>
+                            <p class="shop_price">
+                                <span class="price_new">¥17.90</span>
+                                <del class="csi_price_origin" style="font-weight: 300;font-size: 12px;color: #999;cursor: text;">¥32.20</del>
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img class="img" src="//img12.360buyimg.com/jdcms/s260x260_jfs/t1/82504/24/8678/274906/5d67516dE2543717a/658409e99d553c00.jpg!q80.webp" alt="晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色">
+                                <p class="img_name">晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色</p>
+                            </div>
+                            <p class="shop_price">
+                                <span class="price_new">¥17.90</span>
+                                <del class="csi_price_origin" style="font-weight: 300;font-size: 12px;color: #999;cursor: text;">¥32.20</del>
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img class="img" src="//img13.360buyimg.com/jdcms/s260x260_jfs/t1/92797/13/14321/205483/5e64b609E58ae9b38/79343702bb00b9a3.jpg!q80.webp" alt="晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色">
+                                <p class="img_name">晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色</p>
+                            </div>
+                            <p class="shop_price">
+                                <span class="price_new">¥17.90</span>
+                                <del class="csi_price_origin" style="font-weight: 300;font-size: 12px;color: #999;cursor: text;">¥32.20</del>
+                            </p>
+                        </li>
+                        <li>
+                            <div>
+                                <img class="img" src="//img14.360buyimg.com/jdcms/s260x260_jfs/t1/45126/18/13171/151957/5da00b41Ee54988cb/6f5472e47012e274.jpg!q80.webp" alt="晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色">
+                                <p class="img_name">晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色</p>
+                            </div>
+                            <p class="shop_price">
+                                <span class="price_new">¥17.90</span>
+                                <del class="csi_price_origin" style="font-weight: 300;font-size: 12px;color: #999;cursor: text;">¥32.20</del>
+                            </p>
+                        </li>
+                    </ul>
+                    <a href="#"> <img src="./images/5zhe.png" alt=""></a>
+                </div>
+
+            </div>
+            <!-- <div class="meau">菜单</div> -->
+        </div>
+
+        <!--模块 内容-->
+        <div class="louceng_box">
+            <div class="louceng">
+                <div class="title"> <span>超值量贩</span></div>
+                <ul class="c-img">
+                    <li>
+                        <div class="img_box">
+                            <img src="./images/c1.webp" alt="">
+                            <span>徐福记 沙皇礼盒 沙琪玛礼盒整箱糕点心 新年年货礼盒零食大礼包 1471g</span>
+                        </div>
+                        <footer>
+                            <span>量贩价：¥69.90</span>
+                            <span>加入购物车</span>
+                            <i>超值量贩定制款</i>
+                        </footer>
+                        <div class="triangle"></div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="./images/c2.webp" alt="">
+                            <span>超值量贩定制款】好丽友（orion）饼干蛋糕 营养早餐 下午茶 Q蒂 红丝绒 蛋糕派 36枚混合派礼包</span>
+                        </div>
+                        <footer>
+                            <span>量贩价：¥69.90</span>
+                            <span>加入购物车</span>
+                            <i>超值量贩定制款</i>
+                        </footer>
+                        <div class="triangle"></div>
+                    </li>
+                    <li>
+                        <div class="img_box">
+                            <img src="./images/c3.webp" alt="">
+                            <span>【超值量贩定制款】芭比乐 猫粮成猫幼猫全猫种通用宠物猫粮2.5kg/袋</span>
+                        </div>
+                        <footer>
+                            <span>量贩价：¥69.90</span>
+                            <span>加入购物车</span>
+                            <i>超值量贩定制款</i>
+                        </footer>
+                        <div class="triangle"></div>
+                    </li>
+
+                </ul>
+                <div class="con">
+                    <div class="shop">
+                        <ul>
+                            <li>
+                                <div>
+                                    <img class="img" src="//img10.360buyimg.com/jdcms/s260x260_jfs/t1/73088/12/14395/296831/5dbabaf9Eea1f3000/3e7e628e7d1b5f46.jpg!q80.webp" alt="晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色">
+                                    <p class="img_name">晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色</p>
+                                </div>
+                                <p class="shop_price">
+                                    <span class="price_new">¥17.90</span>
+                                    <del class="csi_price_origin" style="font-weight: 300;font-size: 12px;color: #999;cursor: text;">¥32.20</del>
+                                </p>
+                            </li>
+                            <li>
+                                <div>
+                                    <img class="img" src="//img11.360buyimg.com/jdcms/s260x260_jfs/t1/57946/31/8439/190516/5d5e56a3E4c5bcecd/db3f3f216662138c.jpg!q80.webp" alt="晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色">
+                                    <p class="img_name">晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色</p>
+                                </div>
+                                <p class="shop_price">
+                                    <span class="price_new">¥17.90</span>
+                                    <del class="csi_price_origin" style="font-weight: 300;font-size: 12px;color: #999;cursor: text;">¥32.20</del>
+                                </p>
+                            </li>
+                            <li>
+                                <div>
+                                    <img class="img" src="//img12.360buyimg.com/jdcms/s260x260_jfs/t1/82504/24/8678/274906/5d67516dE2543717a/658409e99d553c00.jpg!q80.webp" alt="晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色">
+                                    <p class="img_name">晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色</p>
+                                </div>
+                                <p class="shop_price">
+                                    <span class="price_new">¥17.90</span>
+                                    <del class="csi_price_origin" style="font-weight: 300;font-size: 12px;color: #999;cursor: text;">¥32.20</del>
+                                </p>
+                            </li>
+                            <li>
+                                <div>
+                                    <img class="img" src="//img13.360buyimg.com/jdcms/s260x260_jfs/t1/92797/13/14321/205483/5e64b609E58ae9b38/79343702bb00b9a3.jpg!q80.webp" alt="晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色">
+                                    <p class="img_name">晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色</p>
+                                </div>
+                                <p class="shop_price">
+                                    <span class="price_new">¥17.90</span>
+                                    <del class="csi_price_origin" style="font-weight: 300;font-size: 12px;color: #999;cursor: text;">¥32.20</del>
+                                </p>
+                            </li>
+                            <li>
+                                <div>
+                                    <img class="img" src="//img14.360buyimg.com/jdcms/s260x260_jfs/t1/45126/18/13171/151957/5da00b41Ee54988cb/6f5472e47012e274.jpg!q80.webp" alt="晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色">
+                                    <p class="img_name">晟旎尚品 衣架 20只 晾衣架子成人儿童通用型浸胶防滑凹槽衣服架衣撑子 双色</p>
+                                </div>
+                                <p class="shop_price">
+                                    <span class="price_new">¥17.90</span>
+                                    <del class="csi_price_origin" style="font-weight: 300;font-size: 12px;color: #999;cursor: text;">¥32.20</del>
+                                </p>
+                            </li>
+                        </ul>
+                        <a href="#"> <img src="./images/more.png" alt="" style="margin-left: -20px;"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="louceng" style="margin-top: 0;">
+                <div class="title"><span>品牌特卖</span></div>
+                <div class="con">
+                    <ul class="img_list" style="display: flex;flex-wrap: wrap;">
+                        <li style="margin-left: 0;">
+                            <img src="https://img10.360buyimg.com//babel/jfs/t1/108866/28/7677/98351/5e60c611E1afa7d4c/feca33dd769b4b65.jpg!q80.webp" alt="">
+                        </li>
+                        <li><img src="https://img10.360buyimg.com//babel/jfs/t1/102370/14/13152/28693/5e537dedE2fba965c/12b7a24b054f0af4.jpg!q80.webp" alt="">
+                        </li>
+                        <li>
+                            <img src="https://img11.360buyimg.com//babel/jfs/t1/85422/25/13781/36208/5e59672cEafa9a095/fc537cc820c70fd8.jpg!q80.webp" alt="">
+                        </li>
+                        <li>
+                            <img src="https://img12.360buyimg.com//babel/jfs/t1/105788/17/14244/32322/5e61faccEfdf6b523/b97cd83d19734bb3.jpg!q80.webp" alt="">
+                        </li>
+                        <li style="margin-right:0;">
+                            <img src="https://img13.360buyimg.com//babel/jfs/t1/106068/28/13151/30544/5e5732b8E38e577f5/622f2a3523bc599e.jpg!q80.webp" alt="">
+                        </li>
+                        <li style="margin-left:0;">
+                            <img src="https://img10.360buyimg.com//babel/jfs/t1/107124/14/6768/33221/5e4f6a28E856a956c/29f087a61da1f066.jpg!q80.webp" alt="">
+                        </li>
+                        <li>
+                            <img src="https://img11.360buyimg.com//babel/jfs/t1/85458/7/13412/32947/5e588beeEaa1fcf13/62d1d90624aaed45.jpg!q80.webp" alt="">
+                        </li>
+                        <li>
+                            <img src="https://img12.360buyimg.com//babel/jfs/t1/104734/25/13245/48672/5e5618bcE617a70bb/b8999fbdf6695652.jpg!q80.webp" alt="">
+                        </li>
+                        <li>
+                            <img src="https://img13.360buyimg.com//babel/jfs/t1/94107/22/13560/39411/5e5ccb6fE05c34c11/19a209a2025464fb.jpg!q80.webp" alt="">
+                        </li>
+                        <li>
+                            <img src="https://img14.360buyimg.com//babel/jfs/t1/85798/23/13999/42170/5e62042cE4b3d5f7a/82b61bec0a0ce575.jpg!q80.webp" alt="">
+                        </li>
+                        <li style="margin-right: 0;margin-left: 0;position: absolute;right: -6px;bottom: -24px;">
+                            <img src="https://img13.360buyimg.com/cms/jfs/t6103/189/327979581/20329/b31938f4/5927d79cNf491e860.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="louceng">
+                <div class="title"><span>热卖商品</span></div>
+                <div class="con">热卖商品</div>
+            </div>
+            <div class="louceng">
+                <div class="title"><span>休闲零食</span></div>
+                <div class="con">休闲零食</div>
+            </div>
+            <div class="louceng">
+                <div class="title"><span>奶制品</span></div>
+                <div class="con">奶制品</div>
+            </div>
+            <div class="louceng">
+                <div class="title"><span>清洁用品</span></div>
+                <div class="con">清洁用品</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="./js/index.js"></script>
+<script src="./scr/侧边栏/js/nav.js"></script>
+
+
+<!-- banner-js -->
+<script type="text/javascript">
+    // big-banner
+    $(function() {
+        var count = 0;
+        var $li = $(".big_slider>ul>li");
+        var tinner = setInterval(() => {
+            // console.log(1)
+            count++;
+            if (count == $li.length) {
+                count = 0;
+            }
+            $li.eq(count).fadeIn().siblings().fadeOut();
+            $(".slider_icon i").eq(count).addClass("btn_act").siblings().removeClass('btn_act');
+        }, 3000)
+
+        $('.big_slider').mouseover(() => {
+            clearInterval(tinner)
+        })
+        $('.big_slider').mouseout(() => {
+            clearInterval(tinner)
+            tinner = setInterval(() => {
+                // console.log(count)
+                count++;
+                if (count == $li.length) {
+                    count = 0;
+                }
+                $li.eq(count).fadeIn().siblings().fadeOut();
+                $(".slider_icon i").eq(count).addClass("btn_act").siblings().removeClass('btn_act');
+            }, 3000)
+        })
+
+        $(".next").click(function() {
+            clearInterval(tinner)
+            count++;
+            if (count == $li.length) {
+                count = 0;
+            }
+            $li.eq(count).fadeIn().siblings().fadeOut();
+            $(".slider_icon i").eq(count).addClass("btn_act").siblings().removeClass('btn_act');
+            console.log(count);
+        });
+
+        $(".prve").click(function() {
+            clearInterval(tinner)
+            count--;
+            if (count == -1) {
+                count = $li.length - 1;
+            }
+            console.log(count);
+            $li.eq(count).fadeIn().siblings().fadeOut();
+            $(".slider_icon i").eq(count).addClass("btn_act").siblings().removeClass('btn_act');
+        });
+        $(".big_slider .slider_icon i").mouseenter(function() {
+            clearInterval(tinner)
+            $(this).addClass('btn_act').siblings().removeClass("btn_act");
+            $li.eq($(this).index()).fadeIn().siblings().fadeOut();
+            count = $(this).index();
+        });
+
+        $(function() {
+            var obj = new floor('.fixedmeau .f', '.louceng_box>.louceng', '.header_box');
+            obj.init()
+        });
+    });
+
+
+    // min-banner
+    $(function() {
+        var count1 = 0;
+        var $li = $("#min_slider>ul>li");
+        var tinner = setInterval(() => {
+            // console.log(1)
+            count1++;
+            if (count1 == $li.length) {
+                count1 = 0;
+            }
+            $li.eq(count1).fadeIn().siblings().fadeOut();
+            $("#min_slider i").eq(count1).addClass("min_btn_act").siblings().removeClass('min_btn_act');
+        }, 2500)
+
+        $('#min_slider').mouseover(() => {
+            clearInterval(tinner)
+        })
+        $('#min_slider').mouseout(() => {
+            clearInterval(tinner)
+            tinner = setInterval(() => {
+                // console.log(count1)
+                count1++;
+                if (count1 == $li.length) {
+                    count1 = 0;
+                }
+                $li.eq(count1).fadeIn().siblings().fadeOut();
+                $("#min_slider i").eq(count1).addClass("min_btn_act").siblings().removeClass('min_btn_act');
+            }, 2500)
+        })
+
+        $("#min_slider i").mouseenter(function() {
+            clearInterval(tinner)
+            $(this).addClass('min_btn_act').siblings().removeClass("min_btn_act");
+            $li.eq($(this).index()).fadeIn().siblings().fadeOut();
+            count1 = $(this).index();
+        });
+    });
+
+    // ---
+    (function() {
+        var $menuLi = $('#nav .menu');
+        var $menuHd = $('#nav .menu-hd');
+        var $menuBd = $('#nav .menu-bd');
+        var $arrow = $('#nav .m1 i');
+        $menuBd.hover(function() {
+            $menuHd.addClass('on');
+        }, function() {
+            $menuHd.removeClass('on');
+        });
+        $menuLi.hover(function() {
+            $menuHd.children('b').addClass('b-on');
+        }, function() {
+            $menuHd.children('b').removeClass('b-on');
+        })
+    })();
+</script>
+
+
+<!-- //欢迎登入 -->
+<script>
+    $(function() {
+        var nameId = localStorage.getItem("username")
+        if (nameId) {
+            $("#username").html(`欢迎，${nameId}`)
+            $("#loginUser").html(`<a href="./scr/注册/index.html" style="color: red; font-size: 12px" target="_blank"
+                            id="register">注销</a>`)
+
+        } else {
+            $("#username").html(`你好，请登入`)
+            $("#loginUser").html(`<a href="./scr/注册/index.html" style="color: red; font-size: 12px" target="_blank"
+                            id="register">免费注册</a>`)
+
+        }
+    })
+</script>
+
+<!-- 倒计时 -->
+<script>
+    $(document).ready(function() {
+        var oDate = new Date();
+        var nowTime = oDate.getTime(); //现在的毫秒数
+        oDate.setDate(oDate.getDate() + 1); // 设定截止时间为第二天
+        var targetDate = new Date(oDate.toLocaleDateString());
+        run(targetDate);
+    });
+
+    function run(enddate) {
+        getDate(enddate);
+        setInterval("getDate('" + enddate + "')", 500);
+    }
+
+    function getDate(enddate) {
+        var oDate = new Date(); //获取日期对象
+
+        var nowTime = oDate.getTime(); //现在的毫秒数
+        var enddate = new Date(enddate);
+        var targetTime = enddate.getTime(); // 截止时间的毫秒数
+        var second = Math.floor((targetTime - nowTime) / 1000); //截止时间距离现在的秒数
+
+        var day = Math.floor(second / 24 * 60 * 60); //整数部分代表的是天；一天有24*60*60=86400秒 ；
+        second = second % 86400; //余数代表剩下的秒数；
+        var hour = Math.floor(second / 3600); //整数部分代表小时；
+        second %= 3600; //余数代表 剩下的秒数；
+        var minute = Math.floor(second / 60);
+        second %= 60;
+        var spanH = $('.se-txt')[0];
+        var spanM = $('.se-txt')[1];
+        var spanS = $('.se-txt')[2];
+
+        spanH.innerHTML = tow(hour);
+        spanM.innerHTML = tow(minute);
+        spanS.innerHTML = tow(second);
+    }
+
+    function tow(n) {
+        return n >= 0 && n < 10 ? '0' + n : '' + n;
+    }
+</script>
+<script src="./scr/导航/temp/js/index_v20.js"></script>
+<script src="./scr/楼层栏/js/floor.js"></script>
+<script src='http://unpkg.com/react/umd/react.development.js'></script>
+<script src='http://unpkg.com/react-dom/umd/react-dom.development.js'></script>
+<!-- 购物车 -->
+<script>
+    var uid = localStorage.getItem("id")
+    var username = localStorage.getItem("username")
+    var token = localStorage.getItem("token")
+    $.get('http://jx.xuzhixiang.top/ap/api/cart-list.php', {
+        id: uid
+    }, function(data) {
+        console.log(data);
+        data = data.data;
+        var arr = data;
+        var str = '';
+        arr.forEach(function(val) {
+            str += "\n            <tr>\n                <td class=\"commodity\">\n                    <div>\n                        <img src=\"".concat(val.pimg, "\" alt=\"\">\n                    </div>\n                    <h3>").concat(val.pname, "</h3>\n                    <p>\u5C3A\u7801</p>\n                    <p><span>\u75AF\u62A2\u4EF7</span></p>\n                </td>\n                <td class=\"spice \">\n                    <h3>").concat(val.pprice, "</h3>\n                    <p>").concat(parseInt(val.pprice / (parseFloat(val.pdesc) / 10)), "</p>\n                </td>\n                <td>\n                    <div class=\"num\"  pid=").concat(val.pid, ">\n                        <a href=\"javaScript:;\" class=\"reduce\"> - </a><span class=\"num2\">").concat(val.pnum, "</span><a href=\"javaScript:;\" class=\"add\">+</a>\n                    </div>\n                </td>\n                <td class=\"sumsp \">\n                    <h3>").concat(val.pprice * val.pnum, "</h3>\n                </td>\n                <td >\n                    <a class=\"del\"  pid=").concat(val.pid, " href=\"javaScript:;\">\u5220\u9664</a>\n                </td>\n            </tr>");
+        });
+        $('table').append(str);
+    });
+
+
+    $('table').on('click', '.add', function() {
+        //只修改当前商品列的值
+        var $num = $(this).siblings('.num2');
+        var num = parseInt($num.html());
+        $.get('http://jx.xuzhixiang.top/ap/api/cart-update-num.php', {
+            uid: uid,
+            pid: $(this).parent().attr('pid'),
+            pnum: num + 1
+        }, function(data) {
+            console.log(data);
+        });
+        $num.html(num + 1);
+
+        let price = parseInt($(this).parent().parent().parent().find('.spice h3').html())
+
+        let sumsp = parseInt($(this).parent().parent().next().find('h3').html());
+        console.log(price, sumsp);
+
+        $(this).parent().parent().next().find('h3').html(sumsp + price)
+    });
+
+    $('table').on('click', '.reduce', function() {
+        var $num = $(this).siblings('.num2');
+        var num = parseInt($num.html());
+
+        if (num != 1) {
+            $num.html(num - 1);
+            $.get('http://jx.xuzhixiang.top/ap/api/cart-update-num.php', {
+                    uid: uid,
+                    pid: $num.parent().attr('pid'),
+                    pnum: num - 1
+                }, function(data) {
+                    console.log(data);
+                })
+                //计数加减
+            let price = parseInt($(this).parent().parent().parent().find('.spice h3').html())
+
+            let sumsp = parseInt($(this).parent().parent().next().find('h3').html());
+            console.log(price, sumsp);
+
+            $(this).parent().parent().next().find('h3').html(sumsp - price)
+
+        }
+    }); //删除按钮
+
+    $('table').on('click', '.del', function() {
+        //当用户点击删除时在页面删除
+        $(this).parent().parent().remove(); // console.log($(this).parent().parent());
+        $.get('http://jx.xuzhixiang.top/ap/api/cart-delete.php', {
+            uid: uid,
+            pid: $(this).attr('pid')
+        }, data => {
+            console.log(data);
+
+        })
+    });
+</script>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+
+    <link type="text/css" href="css/style.css" rel="stylesheet" />
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <style>
+        .right {
+            position: fixed;
+            right: 400px;
+            top: 30px;
+        }
+
+        button {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+        <a href="javascript:;" class="phone-display"></a>
+        <div class="bottom-nav clearfix">
+            <div class="tab-btn btn-left">
+                <i class="shift-icon">
+                    <span></span>
+                </i>
+            </div>
+            <div class="tab-btn btn-right">
+                <i class="shift-icon">
+                    <span></span>
+                </i>
+            </div>
+            <div class="bottom-center-nav">
+                <ul class="small-img-ul">
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="right">
+        <section>
+
+            <span style="background-color: red;">折后价</span>
+            <h2>￥255</h2>
+            <span>￥939</span>
+            <span>2.8折</span>
+
+
+            <h3>唯品价￥319</h3>
+        </section>
+        <form action="">
+            <label>
+            </label>
+            <!-- <label style="display: flex;flex: 1;"> -->
+            <span>数量</span>
+            <div>
+                <button class="_add">-</button><span style="display: inline-block; width: 40px;height: 30px;"
+                    class="nums">1</span><button class="addd">+</button>
+            </div>
+            <!-- </label> -->
+            <a href="#" style="background-color:red" id="join">加入购物袋</a>
+        </form>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+<script>
+    var pid = location.search.split("=")[1]
+    console.log(pid)
+    var uid = localStorage.getItem("id")
+    var username = localStorage.getItem("username")
+    var token = localStorage.getItem("token")
+    $("#join").click(function () {
+        console.log('dianjile'); //用户点击则添加商品
+        //添加商品
+        $.get('http://jx.xuzhixiang.top/ap/api/add-product.php', {
+            uid: uid,
+            pid: pid,
+            pnum: $(".nums").text()
+        }, function (data) {
+            console.log(data);
+            window.open("../html/cart.html")
+        });
+    });
+
+    var _add = document.querySelector('._add')
+    var addd = document.querySelector('.addd')
+    var nums = document.querySelector('.nums')
+    // nums.innerHTML = Number(1)
+    addd.onclick = function (e) {
+        e.preventDefault()
+        var bush = Number(nums.textContent++)
+        // bush++
+        console.log(Number(bush))
+    }
+    _add.onclick = function (e) {
+        e.preventDefault()
+        var bush;
+        bush < 0 ? bush = Number(nums.textContent--) : bush = Number(1)
+
+        console.log(Number(bush))
+    }
+
+
+
+
+</script>
+
+</html>

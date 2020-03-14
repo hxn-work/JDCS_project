@@ -1,0 +1,87 @@
+form {
+    /* width: 840px; */
+    /* margin: 60px auto 0; */
+    position: relative;
+    margin-top: 24px;
+}
+
+
+.txt {
+    width: 370px;
+    height: 36px;
+    line-height: 36px;
+    vertical-align: bottom;
+    border: 2px solid #ffa133;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 6px;
+    font-size: 12px;
+    outline: none;
+}
+
+.btn_search {
+    width: 82px;
+    height: 36px;
+    border: 2px solid #ffa133;
+    vertical-align: middle;
+    background-color: #ffa133 !important;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 300;
+    outline: none;
+}
+
+.list {
+    width: 450px;
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 36px;
+    background-color: #fff;
+    border: #ddd 1px solid;
+    border-color: transparent #ddd #ddd #ddd;
+    /* transform: translateX(-50%); */
+    z-index: 99999;
+}
+
+.list li {
+    width: 100%;
+    height: 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none !important;
+}
+
+.list i {
+    position: absolute;
+    left: 150px;
+}
+
+
+.list a {
+    display: inline-block;
+    width: 450px;
+    height: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 12px;
+    color: #777;
+    padding: 0 4px;
+    box-sizing: border-box;
+    border: none !important;
+    line-height: 24px;
+}
+
+.list a:hover {
+    text-decoration: none;
+    color: #777;
+    background-color: #ffdbb3;
+}
+
+
+.list a span {
+    font-weight: 400;
+}
